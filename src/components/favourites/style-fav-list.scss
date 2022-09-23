@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container-fav-list {
+  width: 100%;
+  background-color: #0f1b2b;
+  height: 100vh;
+  color: white;
+}
+.container-fav-list-title {
+  width: 100%;
+  h2 {
+    text-align: start;
+    padding-top: 110px;
+    padding-left: 30px;
+  }
+}
+.container-fav-list-movie {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  overflow: auto;
+  margin-bottom: 2rem;
+  .movie__poster {
+    margin: auto;
+  }
+  .movie-stars {
+    margin: auto;
+  }
+}
+.movie {
+  display: flex;
+  max-width: 155px;
+  flex-direction: column;
+  margin: 30px;
+
+  padding-top: 20px;
+
+  &__title {
+    font-family: Actor;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  &__genred {
+    top: 5px;
+  }
+  &__poster-container {
+    position: relative;
+  }
+
+  &__poster {
+    width: 155px;
+    border-radius: 10px;
+  }
+}
+
+.delete__icon {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: black;
+}
+.movie-stars {
+  margin: auto;
+}
+.staricon path {
+  color: yellow;
+}
+.scoreicon--fade path {
+  color: rgba(255, 255, 0, 0.406);
+}
+.item__duration {
+  font-size: 12px;
+  margin: auto;
+}
+.movietitle {
+  font-size: 20px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.update-score {
+  margin: 5px;
+  &__input {
+    width: 10em;
+    background-color: transparent;
+    border-radius: 5px;
+    border-style: solid;
+  }
+  &__button {
+    margin: 20px;
+    color: white;
+    background-color: #0f1b2b;
+    border-radius: 5px;
+    :hover {
+      background-color: red;
+    }
+  }
+}
